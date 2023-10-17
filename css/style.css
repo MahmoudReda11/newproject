@@ -109,6 +109,7 @@ header .soc-links a i:hover{
 
   height: 100vh;
   width: 100%;
+  overflow: hidden;
   
 }
 .home::after{
@@ -306,16 +307,16 @@ header{
 
 
 .home::before{
-  background-size: 105%;
-  animation: fade-img 2s linear forwards;
+  transform: scale(1);
+  animation: fade-img 1s linear forwards;
 }
 
 @keyframes fade-img{
   0%{
 
-      background-size: 105%;
+    transform: scale(1);
   }
   100%{
-      background-size: 100%;
+    transform: scale(1.1);
   }
 }
